@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="lg:col-span-4 space-y-6">
             <Link to="/" className="inline-block">
               <span className="text-2xl font-heading font-bold">
-                Ali<span className="text-primary-400">Sheikh</span>
+                Ali H <span className="text-primary-400">Sheikh, LLC</span>
               </span>
             </Link>
             <p className="text-secondary-300 max-w-xs leading-relaxed">
@@ -27,21 +27,21 @@ const Footer = () => {
             <div className="flex space-x-4 pt-2">
               <a
                 href="#"
-                className="text-secondary-300 hover:text-primary-400 transition-colors p-2 bg-secondary-900/50 rounded-full hover:bg-secondary-900"
+                className="text-secondary-300 hover:text-primary-400 transition-colors p-2 bg-secondary-900/50 rounded-full hover:bg-secondary-900 hover:scale-110 transform duration-300"
                 aria-label="LinkedIn"
               >
                 <FiLinkedin className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-secondary-300 hover:text-primary-400 transition-colors p-2 bg-secondary-900/50 rounded-full hover:bg-secondary-900"
+                className="text-secondary-300 hover:text-primary-400 transition-colors p-2 bg-secondary-900/50 rounded-full hover:bg-secondary-900 hover:scale-110 transform duration-300"
                 aria-label="Twitter"
               >
                 <FiTwitter className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-secondary-300 hover:text-primary-400 transition-colors p-2 bg-secondary-900/50 rounded-full hover:bg-secondary-900"
+                className="text-secondary-300 hover:text-primary-400 transition-colors p-2 bg-secondary-900/50 rounded-full hover:bg-secondary-900 hover:scale-110 transform duration-300"
                 aria-label="Instagram"
               >
                 <FiInstagram className="w-5 h-5" />
@@ -51,7 +51,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="lg:col-span-2">
-            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white relative inline-block">
+              <span className="relative z-10">Quick Links</span>
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-primary-500/30 -z-10"></span>
+            </h3>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -94,7 +97,10 @@ const Footer = () => {
 
           {/* Services */}
           <div className="lg:col-span-3">
-            <h3 className="text-lg font-semibold mb-4 text-white">Ventures</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white relative inline-block">
+              <span className="relative z-10">Ventures</span>
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-primary-500/30 -z-10"></span>
+            </h3>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -137,10 +143,13 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="lg:col-span-3">
-            <h3 className="text-lg font-semibold mb-4 text-white">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white relative inline-block">
+              <span className="relative z-10">Contact</span>
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-primary-500/30 -z-10"></span>
+            </h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
-                <div className="p-2 bg-secondary-900/50 rounded-lg text-primary-400 mt-0.5 mr-3">
+              <li className="flex items-start group">
+                <div className="p-2 bg-secondary-900/50 rounded-lg text-primary-400 mt-0.5 mr-3 group-hover:bg-primary-500 group-hover:text-white transition-all duration-300">
                   <FiMail className="w-5 h-5" />
                 </div>
                 <div>
@@ -153,8 +162,8 @@ const Footer = () => {
                   </a>
                 </div>
               </li>
-              <li className="flex items-start">
-                <div className="p-2 bg-secondary-900/50 rounded-lg text-primary-400 mt-0.5 mr-3">
+              <li className="flex items-start group">
+                <div className="p-2 bg-secondary-900/50 rounded-lg text-primary-400 mt-0.5 mr-3 group-hover:bg-primary-500 group-hover:text-white transition-all duration-300">
                   <FiPhone className="w-5 h-5" />
                 </div>
                 <div>
@@ -173,14 +182,16 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-secondary-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-secondary-400 text-sm">
-            &copy; {currentYear} Ali Sheikh. All rights reserved.
+            &copy; {currentYear} Ali H Sheikh, LLC. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6 text-sm text-secondary-400">
-            <a href="#" className="hover:text-primary-400 transition-colors">
+            <a href="#" className="hover:text-primary-400 transition-colors relative group">
               Privacy Policy
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#" className="hover:text-primary-400 transition-colors">
+            <a href="#" className="hover:text-primary-400 transition-colors relative group">
               Terms of Service
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
         </div>
